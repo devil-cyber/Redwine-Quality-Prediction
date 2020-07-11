@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS, cross_origin
 import pickle
+import os
 
 app = Flask(__name__)  # initializing a flask app
 
@@ -60,7 +61,6 @@ def index():
     else:
         return render_template('index.html')
 
-
+port = int(os.getenv('PORT'))
 if __name__ == "__main__":
-    # app.run(host='127.0.0.1', port=8001, debug=True)
-    app.run(debug=True)  # running the appalcohol
+    app.run(host="0.0.0.0", port=port)
