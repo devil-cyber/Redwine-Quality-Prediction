@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<title>Red Wine</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://manikant.herokuapp.com/">Manikant</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/devil-cyber/devil-cyber-Admisson-Predictor-Using-GRE-score">Github<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009">RedWine Dataset<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<!--  <div class="content">-->
+    <h1 style="text-align: center;color:red;">Redwine Quality Test</h1>
+
+
+<div class="form-row mx-auto" >
+        <form action="/predict" method="POST" style="margin: 0 auto;">
+            <input type="number" name="fixed_acidity" class="form-control" placeholder="Fixed Acidity"step="0.00001"required>
+            <input type="number" name="volatile_acidity"  class="form-control" placeholder="Volatile Acidity"step="0.00001"required>
+            <input type="number" name="citric_acid" class="form-control" id="university_rating" placeholder="Citric Acid"step="0.00001"required>
+            <input type="number" name="residual_sugar" class="form-control" placeholder="Residual Sugar"step="0.00001"required>
+            <input type="number" name="chloride"  class="form-control" placeholder="Chloride"step="0.00001"required>
+            <input type="number" name="free_sulfar_dioxide" class="form-control" placeholder="Free Sulfar Dioxide"step="0.000001"required>
+            <input type="number" name="total_sulfar_dioxide" class="form-control" placeholder="Total Sulfar Dioxide"step="0.00001"required>
+            <input type="number" name="density"  class="form-control" placeholder="Density"step="0.000001"required>
+            <input type="number" name="pH"  class="form-control" placeholder="pH"step="0.00001"required>
+            <input type="number" name="sulphate"  class="form-control" placeholder="Sulphate"step="0.00001"required>
+            <input type="number" name="alcohol"  class="form-control" placeholder="alcohol"step="0.00001"required>
+            <input type="submit" value="Predict">
+        </form>
+ </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
