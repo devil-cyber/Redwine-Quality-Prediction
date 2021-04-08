@@ -8,7 +8,7 @@ Jinja2
 joblib
 MarkupSafe
 numpy
-scikit-learn
+scikit-learn==0.21.3
 scipy
 six
 Werkzeug
