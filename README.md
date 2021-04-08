@@ -35,7 +35,7 @@ Output variable (based on sensory data): quality (score between 0 and 10)
 
 1. Clone the repository
 2. pip install -r reqirements.txt
-3. Run the app.py to see the results.
+3. Run the main.py to see the results.
 
 ## Output
 
